@@ -1,6 +1,6 @@
 # LASERfIRE
 
-The LASERfIRE LASER controller software and hardware is the result of over 25 years of work. The software is the long awaited PC version of the Amiga LASER software released as shareware many years ago.
+The [LASERfIRE LASER controller](https://sites.google.com/view/laserfirelasercontroller) software and hardware is the result of over 25 years of work. The software is the long awaited PC version of the Amiga LASER software released as shareware many years ago.
 
 The software converts text sequences into binary sequence data and downloads them to run independently on the LASERfIRE hardware. Because the sequences are run directly on the LASERfIRE hardware, you can do anything on the client PC without slowing up and causing visible interruptions to your LASER show. In fact, you can reset or even completely crash your client PC and the LASERfIRE hardware will not miss a single point! LASERfIRE is fast! It has 32 independent tracks of real time Rotation, 3D Spin, Roll, Morphing, Draw and Dissolving effects! LASERfIRE also has a powerful pattern generator built in, which will produce endless combinations of output patterns.
 
@@ -14,7 +14,7 @@ LASERfIRE LASER Controller is a Windows application and is provided for free.
 
 LASERfIRE now supports the use of the Helios DAC hardware products and IDN compatible DAC hardware. You can also use my "build it yourself" DAC hardware for 100% compatibility. The instructions, parts list, schematic and photos are included in the zip.
 
-Download the latest LASERfIRE LASER Controller zip file in this repository to get started. There's no installer needed – just unzip to your preferred install location.
+Download the latest LASERfIRE LASER Controller zip file from the repository to get started. There's no installer needed – just unzip to your preferred install location.
 
 Last updated on 18-Aug-2026.
 
