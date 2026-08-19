@@ -14,7 +14,7 @@ LASERfIRE LASER Controller is a Windows application and is provided for free.
 
 LASERfIRE now supports the use of the [Helios](https://bitlasers.com/heliospro-laser-dac/) DAC hardware products and [IDN](https://www.ilda.com/idn.htm) compatible DAC hardware. You can also use my "build it yourself" DAC hardware for 100% compatibility. The instructions, parts list, schematic and photos are included in the zip.
 
-Download the latest LASERfIRE LASER Controller zip file from the [repository](https://github.com/LASERfIRE/LASERfIRE) to get started. There's no installer needed – just unzip to your preferred install location.
+Download the latest LASERfIRE LASER Controller zip file from "Releases" in the [repository](https://github.com/LASERfIRE/LASERfIRE) to get started. There's no installer needed – just unzip to your preferred install location.
 
 Last updated on 18-Aug-2026.
 
