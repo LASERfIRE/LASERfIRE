@@ -1,0 +1,993 @@
+LASERfIRE v1.60 - 21-Aug-2026
+LASERfIREUSB v1.25 - 20-Aug-2026
+LASERfIREPI v1.25 - 20-Aug-2026
+LASERfIREHelios v1.24 - 20-Aug-2026
+LASERfIREPro v1.05 - 20-Aug-2026 (** NEW **)
+LASERfIREDAC v1.04 (14) - 20-Mar-2026 
+LASERfIREDACW v1.04 (14) - 20-Mar-2026 (untested) 
+IDN-Scope v1.07 - 18-Aug-2026
+
+
+
+Notes on updating
+-----------------
+
+When updating the install directory with the latest zip file, overwrite all the files except "LASERfIRE.cfg".
+"LASERfIRE.cfg" contains your settings, including the live control sequence assignments.  Therefore when
+upgrading, first make a backup copy of the file "LASERfIRE.cfg", overwrite all the files from the new zip,
+then restore "LASERfIRE.cfg" from your backup.  Else you will lose any changes to your settings and live
+control sequence assignments.
+
+
+
+Notes on testing
+----------------
+
+IDN direct has been tested on the HeliosPro and also on my LASERfIREUSB and LASERfIREPI "build it yourself" DAC hardware drivers.
+
+Testing of my "build it yourself" DAC hardware is done on an Oscilloscope and a Unicorn-RGB5W from LightSpace. 
+(https://www.8lightspace.com/products_details_1/8.html)
+
+I provide LASERfIRE for free, therefore if you like LASERfIRE and want to support the project, then a donation
+of any hardware to test with is appreciated.  Please contact me on lasermax7000@gmail.com if you wish to donate and
+support the project.      
+
+
+
+IDN-Scope for Windows
+---------------------
+
+IDN-Scope is a minimal IDN receiver that displays DAC data in a simulator graphics window.
+It supports both UDP and TCP connections.  Source code has been made available and has been assembled from many of
+the functions that are used in LASERfIREUSB.  It's my contribution to the IDN developer community.  Enjoy.
+
+It can be used to test IDN network connections from existing IDN clients.
+It can be used to test and help you develop your own IDN client.
+It can be used to test and evaluate my proposed "IDN over TCP" implementation.
+
+
+
+21-Aug-2026
+-----------
+
+LASERfIRE:
+
+Text created in the Screen Editor and Scroll Text tools now have the first two points (not just the first point) of each character blanked 
+Blanking is now preserved when inserting a screen file with auto colour mode in the Screen Editor tool
+Updated some default settings 
+
+
+Files:
+
+Updated "Sequences\Projection\ScrollingText.seq"
+Updated "Sequences\Projection\ScrollingText2.seq"
+Updated "Sequences\Projection\ScrollingText3.seq"
+Updated "Sequences\Projection\LASERfIRE.seq"
+Updated "Screens\Projection\ScrollingText.pak"
+Updated "Screens\Projection\ScrollingText2.pak"
+Updated "Screens\Projection\ScrollingText3.pak"
+Updated "Screens\Projection\LASERfIRE.scn"
+
+
+
+20-Aug-2026
+-----------
+
+LASERfIRE:
+
+Fixed intermittent IDN direct frame stall when opening the shutter in waveform mode 
+
+
+LASERfIREUSB, LASERfIREPI and LASERfIREHelios
+
+Small fixes here and there
+
+
+LASERfIREPro:
+
+Fixed status peak length calculation in IDN exclusive mode
+Small fixes here and there
+
+
+Files:
+
+Updated "Screens\Projection\LASERfIRE.scn
+
+
+
+18-Aug-2026
+-----------
+
+LASERfIREUSB, LASERfIREPI, LASERfIREPro and IDN-Scope:
+
+Ignores timestamps from "keep alive" IDN packets
+
+
+
+17-Aug-2026
+-----------
+
+LASERfIRE:
+
+IDN Direct now supports both "Frame" and "Waveform" output modes
+IDN Direct now supports the "Colour Shift" feature of the "Colour Delay" setting
+Fixed the IDN Direct stream speed adjustment - it now works as intended
+Updated both help files (chm & pdf) with details on the new IDN Direct output mode setting
+
+
+LASERfIREHelios:
+
+Fixed the stream speed adjustment - it now works as intended (although the maximum speed is still capped by the Helios SDK)
+
+
+
+15-Aug-2026
+-----------
+
+LASERfIRE:
+
+Small adjustment to IDN Direct
+
+
+LASERfIREUSB, LASERfIREPI and LASERfIREPro:
+
+Colour delay and colour shift now shown in status
+Reduced memory allocation
+Small adjustments and fixes here and there
+
+
+LASERfIREHelios:
+
+Small adjustments and fixes here and there
+
+
+
+14-Aug-2026
+-----------
+
+LASERfIREUSB, LASERfIREPI and IDN-Scope:
+
+Small adjustments and fixes here and there
+
+
+LASERfIREPro:
+
+Fixed glitching/underruns on higher PPS rates
+Capped minimum PPS to 85 (the hardware's minimum limit)
+Capped maximum PPS to 80000 (the no glitching/underruns maximum limit)
+Small adjustments and fixes here and there
+
+
+
+11-Aug-2026
+-----------
+
+LASERfIRE:
+
+The unit's head name is now shown in connection errors
+
+
+LASERfIREPro:
+
+Fixed blanking
+
+
+
+9-Aug-2026
+----------
+
+LASERfIRE:
+
+Fixed download bug on large sequences (introduced from the 6-Aug-2026 update)
+
+
+
+8-Aug-2026
+----------
+
+LASERfIRE:
+
+You can now set individual head names per unit
+Target unit's head name is now shown in the Live Control, Sequencer and Hardware dialog titles
+
+
+
+6-Aug-2026
+----------
+
+LASERfIRE:
+
+No longer releasing the 32 bit version
+DAC "Find" button is now always available and also tests for a LASERfIRE sequence TCP connection 
+Small adjustments and fixes here and there
+Updated both help files (chm & pdf) with details on the new LASERfIREPro
+
+
+LASERfIREUSB, LASERfIREPI, LASERfIREHelios and IDN-Scope:
+
+No longer releasing the 32 bit versions
+Small adjustments and fixes here and there
+
+
+LASERfIREPI
+
+Small adjustments and fixes here and there
+
+
+
+21-JuL-2026
+-----------
+
+LASERfIRE:
+
+The "Echo" sequence command now opens a message box
+Small fixes here and there
+Updated both help files (chm & pdf) with details on new "g#" option
+
+
+LASERfIREUSB and LASERfIREPI:
+
+Added the command line option "g#" to set the colour delay in microseconds for IDN mode
+Colour shift is now automatically calculated and used when the colour delay exceeds the time between points
+Fixed negative X and Y axis overflow in IDN mode
+
+
+LASERfIREHelios:
+
+Updated to latest SDK
+
+
+IDN-Scope:
+
+Fixed negative X and Y axis overflow
+
+
+Files:
+
+Updated "Sequences\Projection\ScrollingText.seq"
+Updated "Sequences\Projection\ScrollingText2.seq"
+Updated "Sequences\Projection\ScrollingText3.seq"
+Updated "Sequences\TestPatterns\ILDATest_12K.seq"
+Updated "Sequences\TestPatterns\ILDATest_30K.seq"
+Updated "Sequences\TestPatterns\NewTest1.seq"
+Updated "Sequences\TestPatterns\NewTest2.seq"
+Updated "Sequences\TestPatterns\NewTest3.seq"
+Updated "Sequences\TestPatterns\NewTest4.seq"
+Updated "Sequences\TestPatterns\NewTest5.seq"
+Updated "Sequences\TestPatterns\NewTest6.seq"
+Updated "Sequences\TestPatterns\NewTest7.seq"
+Updated "Sequences\TestPatterns\NewTest8.seq"
+Updated "Sequences\TestPatterns\NewTest9.seq"
+Updated "Sequences\TestPatterns\NewTest10.seq"
+Updated "Sequences\TestPatterns\NewTest11.seq"
+Updated "Screens\Projection\ScrollingText.pak"
+Updated "Screens\Projection\ScrollingText2.pak"
+Updated "Screens\Projection\ScrollingText3.pak"
+Updated "Screens\Projection\LASERfIRE.scn"
+
+
+
+18-JuL-2026
+-----------
+
+Files:
+
+Added "Strobe.seq" and "Flash.seq" to the Fade library
+
+
+
+16-JuL-2026
+-----------
+
+LASERfIRE:
+
+Added new Library feature to the Command Editor tool
+Several fixes and improvements made to the Command Editor tool
+Small fixes here and there
+Updated both help files (chm & pdf) with details on the new Library feature for the Command Editor tool
+
+
+Files:
+
+Add new "Library" folder with sequence command sub folders and new library sequences
+
+
+
+7-JuL-2026
+----------
+
+LASERfIRE:
+
+Upgraded the old legacy MCI sound functions to the new native Media Foundation libraries - supports more sound file formats  
+"Find IDN" now broadcasts on the network three times instead of once 
+Small fixes here and there
+Updated both help files (chm & pdf)
+
+
+
+2-JuL-2026
+----------
+
+LASERfIRE:
+
+Added new feature to display the sound wave plot on the Timeline ruler, with adjustable ruler height
+Added new "Find" button to the network options to conveniently find and add IDN DACs connected to the network 
+Small fixes here and there
+Updated both help files (chm & pdf) with details on the above new features
+
+
+
+19-Jun-2026
+-----------
+
+LASERfIRE:
+
+Added new internal "Rainbow" palette to the Pattern Designer tool
+Added new "Auto colour mode" to the Screen Editor and Scrolling Text tools
+Added new auto colour controls to the Palette Editor tool
+Added "New start point", "Insert screen", "Invert arc", "Auto colour" and "Snap to grid" tool bar buttons to the Screen Editor tool
+Added new "Bend controls" to the Scrolling Text tool
+Small fixes here and there
+Updated both help files (chm & pdf) with significant changes to "Sequence Overview", "Screen Editor", "Palette Editor" and "Scrolling Text"
+
+
+LASERfIREUSB and LASERfIREPI:
+
+Added internal "Rainbow" palette
+
+
+LASERfIREHelios:
+
+Fixed PPS rate on minimum point frames
+Added internal "Rainbow" palette
+
+
+Files:
+
+Added a Rainbow palette
+Added "Sequences\Projection\ScrollingText.seq"
+Added "Screens\Projection\ScrollingText.pak"
+Added "Sequences\Projection\ScrollingText2.seq"
+Added "Screens\Projection\ScrollingText2.pak"
+Added "Sequences\Projection\ScrollingText3.seq"
+Added "Screens\Projection\ScrollingText3.pak"
+Added "Sequences\Projection\LASERfIRE.seq"
+Updated "Screens\Projection\LASERfIRE.scn"
+Updated "Screens\TestPatterns\ILDATest_12K.scn"
+Updated "Screens\TestPatterns\ILDATest_30K.scn"
+
+
+
+30-May-2026
+-----------
+
+LASERfIRE:
+
+Now asks to import as half size when opening ILDA format files with the Screen Editor and Bend Screen tools
+
+
+Files:
+
+Updated "Sequences\BeamEffects\Circle.seq"
+Updated "Sequences\BeamEffects\ShrinkingCircle.seq"
+Updated "Sequences\BeamEffects\ExpandingCircle.seq"
+Updated "Sequences\BeamEffects\ShrinkExpandingCircle.seq"
+Updated "Sequences\BeamEffects\WildCircle.seq"
+Updated "Sequences\BeamEffects\HorizontalLine.seq"
+Updated "Sequences\BeamEffects\VerticalLine.seq"
+Updated "Sequences\BeamEffects\HVScan.seq"
+Updated "Sequences\BeamEffects\HScan.seq"
+Updated "Sequences\BeamEffects\VScan.seq"
+Updated "Sequences\BeamEffects\WideVScan.seq"
+Updated "Sequences\BeamEffects\TwinVerticalLine.seq"
+Updated "Sequences\BeamEffects\FlatDance.seq"
+Updated "Sequences\BeamEffects\StepCircle.seq"
+Updated "Sequences\BeamEffects\CrazyCircle.seq"
+Updated "Sequences\BeamEffects\FastCrazyCircle.seq"
+Updated "Sequences\BeamEffects\MirrorBall2.seq"
+Updated "Sequences\BeamEffects\MirrorBalls2.seq"
+Updated "Sequences\BeamEffects\MirrorBalls3.seq"
+Added "Screens\BeamEffects\CircleDotsRGB.scn"
+Added "Sequences\BeamEffects\ColourChangingCircleDots.seq"
+Added "Screens\BeamEffects\CircleDotsWRYGCBM.scn"
+Added "Sequences\BeamEffects\LgColourChangingCircleDots.seq"
+
+
+
+27-May-2026
+-----------
+
+LASERfIRE:
+
+Fixed missing colour when opening ILDA format files with sequence commands, Screen Editor and Bend Screen
+
+
+Hardware:
+
+Added photos of a simplified second build
+
+
+Files:
+
+Updated "Screens\TestPatterns\NewTest6.scn"
+
+
+
+24-May-2026
+-----------
+
+LASERfIRE:
+
+Fixed multi-unit Hostname resolve bug
+
+
+LASERfIREHelios:
+
+Updated to latest SDK
+
+
+Hardware:
+
+Added photos of hardware installed in plastic box (Jaycar - HB5912)
+
+
+Files:
+
+Added "Sequences\Effects\FadeOutIn.seq"
+Updated "Sequences\Effects\AllOff.seq"
+
+
+
+5-May-2026
+----------
+
+LASERfIRE, LASERfIREUSB, LASERfIREHelios and IDN-Scope:
+
+Recompiled with static runtime libraries
+
+
+
+12-Apr-2026
+-----------
+
+LASERfIRE:
+
+Updated both help files (chm & pdf)
+
+
+Hardware:
+
+Changed the NMA0515SC to a NMA0512SC
+
+
+
+7-Apr-2026
+----------
+
+IDN-Scope:
+
+Added an editable batch file (double click on "IDN-Scope_start(Edit_in_Notepad).bat" to start with your preferred options)
+
+
+LASERfIREUSB, LASERfIREHelios and IDN-Scope:
+
+Polyline buffer now allocated with SIM buffer
+
+
+
+6-Apr-2026
+----------
+
+LASERfIREUSB, LASERfIREPI, LASERfIREHelios and IDN-Scope:
+
+Small adjustments
+
+
+
+5-Apr-2026
+----------
+
+LASERfIREUSB, LASERfIREPI, LASERfIREHelios and IDN-Scope:
+
+Small adjustments
+
+
+
+4-Apr-2026
+----------
+
+LASERfIRE:
+
+Updated both help files (chm & pdf)
+
+
+LASERfIREUSB and LASERfIREPI:
+
+Added support for lost IDN packets
+
+
+
+3-Apr-2026
+----------
+
+LASERfIRE:
+
+Updated both help files (chm & pdf)
+
+
+LASERfIREUSB and LASERfIREPI:
+
+Fixed "out of order IDN packet" handling bug
+
+
+LASERfIREHelios:
+
+Now displays average sleep error in status
+
+
+
+1-Apr-2026
+----------
+
+LASERfIRE:
+
+Adjusted IDN direct speed limiter for a typical double buffer DAC (again)
+Adjusted default speed adjust back to 100% for both Helios and IDN Direct
+Updated both help files (chm & pdf)
+
+
+LASERfIREUSB and LASERfIREPI:
+
+Small fix to simulator
+
+
+LASERfIREHelios:
+
+Adjusted stream speed limiter for a typical double buffer DAC (again)
+Adjusted default speed adjust back to 100%
+
+
+
+31-Mar-2026
+-----------
+
+LASERfIRE:
+
+Adjusted default speed adjust to 103% for both Helios and IDN Direct
+Updated both help files (chm & pdf)
+
+
+LASERfIREUSB:
+
+Small fix to simulator
+
+
+LASERfIREHelios:
+
+Small fix to simulator
+Adjusted default speed adjust to 103%
+
+
+
+30-Mar-2026
+-----------
+
+LASERfIRE:
+
+Small fixes here and there
+Updated both help files (chm & pdf)
+
+
+LASERfIREUSB:
+
+Main engine now runs in separate thread
+Added timeout to IDN TCP reads
+Added simulator
+Added simulator only mode
+
+
+LASERfIREPI:
+
+Added timeout to IDN TCP reads
+Added simulator only mode
+Fixed "fat" points draw bug
+
+
+LASERfIREHelios:
+
+Main engine now runs in separate thread
+Added simulator
+Small fixes here and there
+
+
+
+24-Mar-2026
+-----------
+
+LASERfIRE:
+
+Fixed IDN TCP reconnect restart glitch
+
+
+LASERfIREHelios:
+
+Fixed shutter open stream restart glitch
+
+
+
+23-Mar-2026
+-----------
+
+LASERfIREUSB:
+
+Increased timer resolution to handle large IDN waveforms and reduce sleep error
+Fixed potential division by zero
+
+
+LASERfIREPI and LASERfIREHelios:
+
+Fixed potential division by zero
+
+
+
+21-Mar-2026
+-----------
+
+LASERfIRE:
+
+Adjusted IDN direct frame timing
+
+
+LASERfIREUSB and LASERfIREPI:
+
+Fixed sleep timing
+Fixed and adjusted IDN frame queue
+
+
+LASERfIREHelios:
+
+Fixed sleep timing
+Adjusted stream mode timing
+
+
+
+20-Mar-2026
+-----------
+
+LASERfIRE:
+
+64 bit version now available
+Added IDN stream speed adjustment to options
+Updated both help files (chm & pdf)
+Small fixes here and there
+
+
+LASERfIREUSB and LASERfIREPI:
+
+64 bit versions now available
+Added IDN support
+Small fixes here and there
+
+
+LASERfIREHelios:
+
+64 bit version now available
+Added IDN stream speed adjustment
+Small fixes here and there
+
+
+LASERfIREDAC:
+
+Shutter control now synced to frame start and end
+
+
+
+5-Mar-2026
+----------
+
+LASERfIRE:
+
+Fixed IDN direct message fragmentation bug
+Updated both help files (chm & pdf)
+
+
+LASERfIREHelios:
+
+Limited the "stream mode" frame rate to match that of a typical double buffered DAC (untested - see notes above)
+
+
+
+28-Feb-2026
+-----------
+
+LASERfIRE:
+
+Added direct ILDA Digital Network (IDN) support (untested)
+Added RGB power settings to the hardware config dialog for "white balance" adjustment
+Added "Intensity to RGB" USB and Helios startup options
+Updated both help files (chm & pdf)
+Small fixes here and there
+
+
+LASERfIREUSB:
+
+Added RGB power control
+Added "Intensity to RGB" option
+Changed to high resolution timer and sleep functions
+
+
+LASERfIREPI:
+
+Added RGB power control
+Added "Intensity to RGB" option
+
+
+LASERfIREHelios:
+
+Added RGB power control
+Added "Intensity to RGB" option
+Small fixes here and there
+
+
+Files:
+
+Updated the TestPattern2.scn file with a white center for real time "white balance" adjustment
+
+
+
+20-Feb-2026
+-----------
+
+LASERfIREHelios:
+
+Fixed output on 12 bit resolution mode
+Fixed Intensity output
+Changed to high resolution timer and sleep functions
+
+
+
+16-Feb-2026
+-----------
+
+LASERfIRE:
+
+Added colour themes and custom colours (right click on the Scope) 
+Fixed a dual head mode bug
+Fixed download using a global ScreenDef bug
+Updated both help files (chm & pdf)
+
+
+LASERfIREPI, LASERfIREUSB and LASERfIREHelios:
+
+Fixed a dual head mode bug
+Fixed download using a global ScreenDef bug
+
+
+
+12-Feb-2026
+-----------
+
+LASERfIRE:
+
+Fixed download thread hang (very rare) 
+Added "Start Helios", 'Stream Mode", "DAC #" and "Port" to system options
+Added "Default All" button to options
+Updated both help files (chm & pdf)
+
+
+LASERfIREHelios:
+
+Sleep time is better managed when in IDN streaming mode
+Fixed minimum points and minimum PPS requirements
+
+
+
+10-Feb-2026
+-----------
+
+LASERfIRE:
+
+Added configurable network port to options
+Added LASERfIREHelios support
+Updated both help files for LASERfIREHelios (chm & pdf)
+
+
+LASERfIREPI and LASERfIREUSB:
+
+Added configurable network port to options
+
+
+
+8-Feb-2026
+-----------
+
+LASERfIRE:
+
+Now shows RGB values in Palette Editor title
+
+
+LASERfIREDAC:
+
+Added a Pico 2W (WiFi) version of LASERfIREDAC (untested)
+
+
+
+7-Feb-2026
+-----------
+
+LASERfIRE:
+
+Added a tool bar button for the new "Find Colour" Screen Editor tool
+Updated both help files with more information on colour palettes (chm & pdf)
+Small fixes here and there
+
+
+LASERfIREUSB:
+
+Now automatically tries to find LASERfIREDAC on any COM port
+
+
+
+5-Feb-2026
+-----------
+
+LASERfIRE:
+
+Fixed colour matching and palette handling when importing and exporting old ILDA formats (0 and 1)
+Added blanking support to the Palette Editor
+Added "Fixed Colour" to the import options 
+Added "Find Colour" to the Screen Editor tools 
+Updated both help files (chm & pdf)
+
+
+
+4-Feb-2026
+-----------
+
+LASERfIRE:
+
+Added support to export ILDA format 4 and 5 image files 
+Small fixes here and there
+
+
+
+31-Jan-2026
+-----------
+
+LASERfIRE:
+
+Added colour index number to Screen Editor status bar and Magnifying Glass
+
+
+
+30-Jan-2026
+-----------
+
+LASERfIRE:
+
+Changed the "Use current directory" button to "Choose the Main Directory" in Options
+
+
+
+29-Jan-2026
+-----------
+
+LASERfIRE:
+
+Updated "PlaySound" sequence command notes on both help files (chm & pdf)
+
+
+
+28-Jan-2026
+-----------
+
+LASERfIRE:
+
+Added new Hardware Config dialog
+Added "Colour Delay" control
+Increased download queue size from 40 to 70
+Updated both help files (chm & pdf)
+Small fixes here and there
+
+
+LASERfIREDAC:
+
+Fixed DAC timer glitch
+Added "Colour Delay" control
+
+
+LASERfIREPI and LASERfIREUSB:
+
+Added "Colour Delay" control
+
+
+Files:
+
+Added "ReadMe.txt" and "UnblockMe.jpg" to help folder with instructions on how to fix "LASERfIRE.chm" not displaying content
+Added TestPattern2.scn file for real time "Colour Delay" adjustment
+
+
+
+19-Jan-2026
+-----------
+
+LASERfIRE:
+
+Updated both help files (chm & pdf)
+
+
+
+17-Jan-2026
+-----------
+
+LASERfIRE:
+
+Increased download queue size from 12 to 40
+Added "Use current directory" button to "Main Dir" in Options
+Added pdf version of the HTML help file (chm) to the "Help" folder
+
+
+Hardware:
+
+Added (untested) command set to use a 64 bit Raspberry Pi OS
+
+
+
+15-Jan-2026
+-----------
+
+LASERfIRE:
+
+Added support to import ILDA format 4 and 5 image files
+Fixed nasty bug on download progress bar
+
+
+Hardware:
+
+Updated Raspberry Pi setup instructions to use 32 bit OS
+
+
+Files:
+
+Added an ILDA default palette
+
+
+
+2-Jan-2026
+----------
+
+LASERfIRE:
+
+Added intensity control
+
+
+LASERfIREDAC:
+
+Added intensity control
+
+
+LASERfIREPI and LASERfIREUSB:
+
+Added intensity control
+
+
+
+31-Dec-2025
+-----------
+
+LASERfIREDAC:
+
+Added retires to DAC reset function on failure
+
+
+LASERfIREPI and LASERfIREUSB:
+
+Fixed grammar error in options/usage text
+
+
+
+22-Dec-2025
+-----------
+
+First public release
+
