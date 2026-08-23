@@ -1,6 +1,6 @@
 # LASERfIRE
 
-The [LASERfIRE LASER controller](https://sites.google.com/view/laserfirelasercontroller) software and hardware is the result of over 25 years of work. The software is the long awaited PC version of the Amiga LASER software released as shareware many years ago.
+The [LASERfIRE LASER controller](https://sites.google.com/view/laserfirelasercontroller) software and hardware is the result of over 25 years of work. The software is the long awaited PC version of the [Amiga LASER software](https://github.com/LASERfIRE/LASERMAX) released as shareware many years ago.
 
 The software converts text sequences into binary sequence data and downloads them to run independently on the LASERfIRE hardware. Because the sequences are run directly on the LASERfIRE hardware, you can do anything on the client PC without slowing up and causing visible interruptions to your LASER show. In fact, you can reset or even completely crash your client PC and the LASERfIRE hardware will not miss a single point! LASERfIRE is fast! It has 32 independent tracks of real time Rotation, 3D Spin, Roll, Morphing, Draw and Dissolving effects! LASERfIRE also has a powerful pattern generator built in, which will produce endless combinations of output patterns.
 
