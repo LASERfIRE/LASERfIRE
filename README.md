@@ -18,7 +18,7 @@ Download the latest LASERfIRE LASER Controller zip file from "Releases" in the [
 
 Last updated on 11-Sep-2026.
 
-SHA256: def346291f607728fb0eaf73eacb1a7558d836be7373accf90badefe6d5a9065
+SHA256: cbb827270ca037671aebfb8753e4275a8be6d73df8a4335c1011931c8b1d61ff
 
 ## Contact
 
