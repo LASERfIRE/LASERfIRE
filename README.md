@@ -16,9 +16,9 @@ LASERfIRE now supports the use of the [Helios](https://bitlasers.com/heliospro-l
 
 Download the latest LASERfIRE LASER Controller zip file from "Releases" in the [repository](https://github.com/LASERfIRE/LASERfIRE) to get started. There's no installer needed - just unzip to your preferred install location.
 
-Last updated on 23-Oct-2026.
+Last updated on 26-Oct-2026.
 
-SHA256: c4de7726a36d9aec3b86aba3be297e96cc7c74b578c052c582efaed9c7c5c095
+SHA256: 4dc5782550e153ec18563b994cdc708fe61945dafa8047c5d670e71a5819b5cb
 
 ## Contact
 
